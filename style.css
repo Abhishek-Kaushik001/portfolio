@@ -1,0 +1,132 @@
+/* 🔹 Reset */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+/* 🔥 Smooth Scroll */
+html {
+    scroll-behavior: smooth;
+}
+
+/* 🔥 Navbar */
+nav {
+    background-color: black;
+    color: white;
+    padding: 15px;
+    position: sticky;
+    top: 0;
+}
+
+nav h2 {
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/* 🔥 Hero Section (fixed spacing) */
+.hero {
+    height: 70vh; /* 👈 reduce kiya */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero h1 {
+    font-size: 40px;
+}
+
+/* 🔥 Button */
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: gray;
+}
+
+/* 🔥 About Section */
+#about {
+    padding: 60px 20px;
+    background-color: white;
+}
+
+#about h2 {
+    font-size: 30px;
+}
+
+#about p {
+    max-width: 600px;
+    margin: auto;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* 🔥 Projects Section (gap fix) */
+#projects {
+    padding: 60px 20px;
+    padding-bottom: 30px; /* 👈 extra space kam */
+}
+
+/* 🔥 Project Container */
+.project-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* 🔥 Cards (improved hover) */
+.card {
+    background: white;
+    padding: 20px;
+    width: 250px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px); /* 👈 smooth hover */
+}
+
+/* 🔥 Contact Section */
+#contact {
+    background-color: black;
+    color: white;
+    padding: 50px 20px;
+}
+
+#contact h2 {
+    margin-bottom: 20px;
+}
+
+/* 🔥 Footer */
+footer {
+    background-color: #111;
+    color: white;
+    padding: 10px;
+    font-size: 14px;
+}
