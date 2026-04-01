@@ -1,81 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Abhishek | Portfolio</title>
 
-    <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-
-    <!-- 🔥 Navbar -->
-    <nav>
-        <h2>My Portfolio</h2>
-        <ul>
-            <li><a href="#hero">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </nav>
-
-
-    <!-- 🔥 Hero Section -->
-    <section class="hero" id="hero">
-        <h1>Hello, I'm Abhishek 👋</h1>
-        <p>Frontend Developer</p>
-        <button id="btn">View My Work</button>
-    </section>
+<!-- 🔥 Navbar -->
+<nav>
+  <h2>My Portfolio</h2>
+  <ul>
+    <li><a href="#hero">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
 
 
-    <!-- 🔥 About Section -->
-    <section id="about">
-        <h2>About Me</h2>
-        <p>
-            I am a BCA student and frontend developer. 
-            I build websites using HTML, CSS, and JavaScript.
-        </p>
-    </section>
+<!-- 🔥 Hero Section -->
+<section class="hero" id="hero">
+  <h1>Hello, I'm Abhishek 👋</h1>
+  <p>Frontend Developer | Building Modern Web Experiences 🚀</p>
+
+  <a href="#projects" class="btn">View My Work</a>
+
+  <a href="resume.pdf" download class="btn">
+    Download Resume
+  </a>
+</section>
 
 
-    <!-- 🔥 Projects Section -->
+<!-- 🔥 About Section -->
+<section id="about">
+  <h2>About Me</h2>
+  <p>
+    I am a MCA student and frontend developer. 
+    I build modern and responsive websites using HTML, CSS, and JavaScript.
+  </p>
+</section>
+
+
+<!-- 🔥 Projects Section -->
 <section id="projects">
-    <h2>My Projects</h2>
+  <h2>My Projects</h2>
 
-    <div class="project-container">
+  <div class="project-container">
 
-        <div class="card">
-            <h3>ConnectGrid</h3>
-            <p>A full stack social media app with authentication and posts.</p>
-        </div>
+    <!-- Project 1 -->
+    <div class="card">
+      <h3>ConnectGrid</h3>
+      <p>Full stack social media app with authentication and posts</p>
 
-        <div class="card">
-            <h3>Blog App</h3>
-            <p>A backend application for creating and managing blog posts.</p>
-        </div>
+      <a href="#" class="btn small">Live</a>
 
-        <div class="card">
-            <h3>Portfolio Website</h3>
-            <p>My personal portfolio using HTML, CSS, and JavaScript.</p>
-        </div>
-
+      <a href="https://github.com/Abhishek-Kaushik001/connectgrid" target="_blank" class="btn small">
+        GitHub
+      </a>
     </div>
+
+    <!-- Project 2 -->
+    <div class="card">
+      <h3>Portfolio Website</h3>
+      <p>My personal portfolio website</p>
+
+      <a href="#" class="btn small">Live</a>
+
+      <a href="https://github.com/Abhishek-Kaushik001/portfolio" target="_blank" class="btn small">
+        GitHub
+      </a>
+    </div>
+
+  </div>
 </section>
 
+
+<!-- 🔥 Contact Section -->
 <section id="contact">
-    <h2>Contact Me</h2>
-    <p>Email: kaushikabhishek75120@gmail.com</p>
-    <p>Phone: 9896540773</p>
+  <h2>Contact Me</h2>
+  <p>Email: kaushikabhishek75120@gmail.com</p>
+  <p>Phone: 9896540773</p>
 </section>
 
+
+<!-- 🔥 Footer -->
 <footer>
-    <p>© 2026 Abhishek | All Rights Reserved</p>
+  <p>© <span id="year"></span> Abhishek | All Rights Reserved</p>
 </footer>
 
 
-    <script src="script.js"></script>
+<script src="script.js"></script>
 
 </body>
 </html>

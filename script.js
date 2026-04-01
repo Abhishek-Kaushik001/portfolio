@@ -1,7 +1,17 @@
-let button = document.getElementById("btn");
+// 🔥 Smooth scroll (View My Work button)
+const btn = document.getElementById("btn");
 
-button.addEventListener("click", function() {
+if (btn) {
+  btn.addEventListener("click", () => {
     document.getElementById("projects").scrollIntoView({
-        behavior: "smooth"
+      behavior: "smooth"
     });
-});
+  });
+}
+
+// 🔥 Auto year in footer
+const year = document.getElementById("year");
+
+if (year) {
+  year.innerText = new Date().getFullYear();
+}
