@@ -1,148 +1,115 @@
-/* 🔹 Reset */
-body {
+/* RESET */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family: Arial, sans-serif;
-    background: linear-gradient(to right, #0f172a, #1e293b);
+}
+
+/* BODY */
+body {
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
     color: white;
+}
+
+/* HEADER */
+header {
+    background: black;
     text-align: center;
+    padding: 25px 20px 30px;
 }
 
-/* 🔥 Smooth Scroll */
-html {
-    scroll-behavior: smooth;
+header h1 {
+    margin-bottom: 10px;
 }
 
-/* 🔥 Navbar */
-nav {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: rgba(0, 0, 0, 0.8);
-    backdrop-filter: blur(10px);
-    padding: 15px;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-}
-
-nav h2 {
-    margin: 5px 0;
-}
-
-/* 🔥 Nav Links */
-ul {
+/* NAVBAR */
+nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
-    gap: 25px;
-    padding: 0;
-    margin: 10px 0 0;
+    gap: 30px;
 }
 
-ul li a {
-    text-decoration: none;
+nav ul li a {
     color: white;
-    position: relative;
-    font-size: 16px;
-}
-
-/* 🔥 Hover underline effect */
-ul li a::after {
-    content: "";
-    position: absolute;
-    width: 0%;
-    height: 2px;
-    background: #00bcd4;
-    left: 0;
-    bottom: -5px;
+    text-decoration: none;
+    font-size: 18px;
     transition: 0.3s;
 }
 
-ul li a:hover::after {
-    width: 100%;
+nav ul li a:hover {
+    color: #00c6ff;
 }
 
-/* 🔥 Hero Section */
+/* SECTIONS */
+section {
+    padding: 100px 20px;
+    text-align: center;
+}
+
+/* HERO */
 .hero {
-    height: 85vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background: linear-gradient(to right, #1e293b, #0f172a);
+    margin-top: 30px;
 }
 
-.hero h1 {
+.hero h2 {
     font-size: 48px;
+    margin-bottom: 20px;
 }
 
 .hero p {
     font-size: 20px;
-    margin: 10px 0 20px;
+    margin-bottom: 30px;
 }
 
-/* 🔥 Buttons */
+/* BUTTON */
 .btn {
     display: inline-block;
-    padding: 12px 25px;
-    background: #00bcd4;
+    background: #00c6ff;
     color: white;
-    border-radius: 6px;
+    padding: 12px 25px;
+    border-radius: 8px;
     text-decoration: none;
-    margin: 5px;
-    transition: all 0.3s ease;
-    font-weight: 500;
+    margin: 10px;
+    transition: 0.3s;
 }
 
 .btn:hover {
-    background: #0097a7;
-    transform: scale(1.07);
+    background: #0072ff;
 }
 
-.small {
-    padding: 6px 14px;
-    font-size: 14px;
-}
-
-/* 🔥 About Section */
+/* ABOUT */
 #about {
-    padding: 70px 20px;
-    background: #111827;
-}
-
-#about h2 {
-    font-size: 32px;
-    margin-bottom: 10px;
+    background: black;
+    padding-top: 100px;
 }
 
 #about p {
-    max-width: 600px;
+    max-width: 700px;
     margin: auto;
-    font-size: 18px;
     line-height: 1.6;
 }
 
-/* 🔥 Projects Section */
-#projects {
-    padding: 70px 20px;
-}
-
-/* 🔥 Project Container */
+/* PROJECTS */
 .project-container {
     display: flex;
     justify-content: center;
-    gap: 25px;
+    gap: 30px;
     flex-wrap: wrap;
+    margin-top: 40px;
 }
 
-/* 🔥 Cards */
 .card {
-    background: #1e293b;
+    background: #1c2b36;
     padding: 25px;
-    width: 260px;
     border-radius: 12px;
-    transition: all 0.3s ease;
+    width: 300px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
 }
 
 .card h3 {
@@ -150,70 +117,22 @@ ul li a:hover::after {
 }
 
 .card p {
-    font-size: 15px;
     margin-bottom: 15px;
 }
 
-/* 🔥 Card Hover */
-.card:hover {
-    transform: translateY(-10px) scale(1.03);
-    box-shadow: 0 15px 30px rgba(0,0,0,0.5);
-}
-
-/* 🔥 Contact Section */
+/* CONTACT */
 #contact {
-    background-color: black;
-    color: white;
-    padding: 60px 20px;
-}
-
-#contact h2 {
-    margin-bottom: 15px;
+    background: black;
 }
 
 #contact p {
-    margin: 5px 0;
+    margin: 10px 0;
 }
 
-/* 🔥 Footer */
+/* FOOTER */
 footer {
-    background-color: #111;
-    color: white;
-    padding: 12px;
+    background: black;
+    text-align: center;
+    padding: 20px;
     font-size: 14px;
-}
-
-/* 🔥 Responsive (Mobile) */
-@media (max-width: 768px) {
-
-  ul {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .hero h1 {
-    font-size: 28px;
-  }
-
-  .hero p {
-    font-size: 16px;
-  }
-
-  .project-container {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .card {
-    width: 90%;
-  }
-}
-
-.buttons {
-    margin-top: 10px;
-}
-
-.buttons a {
-    margin: 5px;
-    display: inline-block;
 }
