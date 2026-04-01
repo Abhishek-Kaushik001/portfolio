@@ -208,3 +208,12 @@ footer {
     width: 90%;
   }
 }
+
+.buttons {
+    margin-top: 10px;
+}
+
+.buttons a {
+    margin: 5px;
+    display: inline-block;
+}
